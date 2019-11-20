@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     font-family: 'Roboto', 'Montserrat', sans-serif;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
     background-image: url(dreamshare_assets/assets/headerBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
 }
 /*****HEADER*****/
 header {
@@ -65,7 +65,6 @@ nav {
     position: relative;
     top: -10px
 }
-
 #headertext { 
     text-align: center;
     position: relative;
@@ -79,7 +78,7 @@ nav {
     color: #fff;
 }
 #headertext p {
-    font-size: 20px;
+    font-size: 1.3m;
     color: #fff;
     margin-bottom: 2em;
 }
@@ -94,6 +93,7 @@ nav {
     overflow: hidden;
 }
 /*****HEADER - END*****/
+
 /*******Content********/
 .content {
     background-color: #fff;
@@ -101,19 +101,20 @@ nav {
     top: 675px;
     left: 0;
     width: 100%;
-    height: 1500px;
+    height: 1600px;
 }
 .wrapper {
     width: 70%;
     margin: auto;
 }
 #partner{
-    margin: 1.5em;
+    margin: 1.5em; 
 }
 .headings {
     font-size: 1.5em;
     text-align: center;
     color: #444444;
+    margin-top: 3.5em;
 }
 #partner ul {
     margin: auto;
@@ -131,12 +132,6 @@ nav {
 .photo {
     border-radius: 50%;
 }
-.svg-icon {
-    position: relative;
-    top: 22%;
-    width: 16px;
-    fill: #fff;
-}
 .svg-contatainer {
     width: 35px;
     height: 35px;
@@ -145,6 +140,13 @@ nav {
     position: relative;
     top: -65px;
     left: 100px;
+}
+.svg-icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 16px;
+    fill: #fff;
 }
 #music {
     background-color: #FF4E50;
@@ -157,6 +159,7 @@ nav {
 }
 #airplane {
     background-color: #667DF3;
+    transform: rotate(-25deg);
 }
 #partner ul li h4 {
     position: relative;
@@ -207,10 +210,11 @@ nav {
     top: -160px;
     color: #ffffff;
 }
-.dark-grey {
+#dark-grey {
     color: #444444;
 }
 /*****Content - End *****/
+
 /*********Footer*********/
 footer {
     border-top: #FF4E50 solid 2px;;
@@ -218,7 +222,7 @@ footer {
     height: 210px;
     background-color: #FFFFFF;
     position: absolute;
-    bottom: -1610px;
+    bottom: -228%;
     left: 0;
 }
 table {
@@ -239,42 +243,3 @@ td, th {
     color: #FF4E50;
 }
 /*****Footer - End*****/
-@media only screen and (max-width: 480px) {
-    body {
-        font-family: 'Roboto', 'Montserrat', sans-serif;
-        width: 100%;
-        background-image: url(dreamshare_assets/assets/headerBackground.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    header {
-        border: #FF4E50 dashed 2px;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        font-size: medium;
-    }
-    nav {
-        display: block;
-        float: none;
-    }
-    #header h2 {
-        font-size: 2em;
-    }
-    .wrapper {
-        width: 70%;
-    }
-}
-@media screen and (min-width: 480px) and (max-width: 736px){
-    body {
-        font-family: 'Roboto', 'Montserrat', sans-serif;
-        max-width: 100%;
-    }
-    header {
-        border: #18D4CA dashed 2px;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-    }
-}
