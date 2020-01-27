@@ -26,7 +26,7 @@ html,body {
 }
 body {
     font-family: Montserrat, Roboto, sans-serif;
-    background-image: url(../dreamshare_assets/assets/headerBackground.jpg);
+    background-image: url(dreamshare_assets/assets/headerBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -280,7 +280,7 @@ footer {
     color: #FF4E50;
 } 
 /* ----- Media Queries ----- */
-
+/* 
 @media screen and (max-width: 768px) {
     body {
         background: none;
@@ -311,9 +311,9 @@ footer {
     }
     ul#headernav li {  
         height: 100%;        
-        /* border-bottom: rgba(168, 161, 161, 0.25) 2px solid; */
+        border-bottom: rgba(168, 161, 161, 0.25) 2px solid;
         padding: .8em 0 .8em 0;
-        /* margin: 0 auto; */        
+        margin: 0 auto;        
     }
     ul#headernav li:last-child {
         border: none;
@@ -393,4 +393,4 @@ footer {
 
 @media screen and (max-width: 1366px) {
     
-}
+} */
