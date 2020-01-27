@@ -24,7 +24,7 @@ header {
 nav {
     display: block;
     margin: auto;
-    width: 76%;
+    width: 80%;
     padding: .8em;
     position: relative;
     top: 0;
@@ -43,7 +43,7 @@ nav {
     font-family: Montserrat, Roboto;
     width: 65%;
     margin: 1em;
-    padding-top: .3em;
+    margin-left: 5em;
     list-style-type: none;
     float: right;
 }

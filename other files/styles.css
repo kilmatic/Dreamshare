@@ -26,10 +26,10 @@ html,body {
 }
 body {
     font-family: Montserrat, Roboto, sans-serif;
-    background-image: url(dreamshare_assets/assets/headerBackground.jpg);
+    background-image: url(../dreamshare_assets/assets/headerBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-color: #ffffff;
     margin: 0 auto;
     padding: 0;
@@ -37,27 +37,18 @@ body {
     display: flex;
     flex-flow: column;
     align-content: center;
+    /* overflow: hidden; */
 }
+/* ----- header ----- */
 header {
     width: 100%;
+    height: 650px;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 nav {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    top: 0;
-    overflow: hidden; */
-    display: block;
-    margin: auto;
+    display: inline-flex;
     width: 100%;
     padding: .8em;
     position: relative;
@@ -66,12 +57,10 @@ nav {
 .logo {
     fill: #ffffff;
     margin: 1.5em;
+    position: relative;
+    left: 15%;
 }
 ul#headernav {
-    /* font-family: Montserrat, Roboto;
-    width: 80%;
-    padding-top: .1em;
-    list-style: none; */
     font-family: Montserrat, Roboto;
     margin: 1em;
     margin-right: 3em;
@@ -81,6 +70,8 @@ ul#headernav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    right: -38%;
 }
 ul#headernav li a {
     color: #fff;
@@ -96,6 +87,10 @@ ul#headernav li a {
     font-size: large;
     position: relative;         
 }
+#headertext {
+    position: relative;
+    top: 30%;
+}
 #headertext h2 {
     font-size: 1.3em;
     font-weight: bolder;
@@ -103,7 +98,7 @@ ul#headernav li a {
     margin-top: 1em;
 }
 #headertext p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #fff;
     margin-top: .5em;
 }
@@ -117,12 +112,15 @@ ul#headernav li a {
     color: #fff;
     overflow: hidden;
 }
+/* ----- Content ----- */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    /* width: 100%; */
+    width: 100%;
+    height: 100%;
     background-color: #ffffff;
+    padding-bottom: 3em;
 }
 #partner {
     display: flex;
@@ -198,7 +196,7 @@ ul#headernav li a {
     color: #444444;
 }
 #partner ul li p {
-    font-size: .9em;
+    font-size: .86em;
     margin: 1em;
     color: #444444;
     position: relative;
@@ -225,11 +223,17 @@ ul#headernav li a {
     align-content: stretch;
     align-items: stretch;
 }
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -75px;
+    padding-bottom: 5px;
+}
 .holiday-activity figure {
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin: 0 1em;
-    width: 100%;
+     padding: 10px;
+     margin: 0;
+     margin-bottom: 2.5em;
 }
 #holiday figure img {
     border-radius: 5px;
@@ -238,6 +242,7 @@ ul#headernav li a {
 }
 .text-over-img {
     font-size: 1.2em;
+    font-weight: bolder;
     text-align: center;
     position: relative;
     top: -50%; 
@@ -246,20 +251,19 @@ ul#headernav li a {
 #dark-grey {
     color: #444444;
 }
+/* ----- Footer ----- */
 footer {
     border-top: 2px #FF4E50 solid;
     background-color: #ffffff;
 }
 .footer-nav {
-    width: 68%;
+    width: 60%;
     min-height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
-    padding: 2em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding-left: 10px;
 }
 .footer-column {
     flex-grow: 1;
@@ -275,15 +279,7 @@ footer {
 .pink {
     color: #FF4E50;
 } 
-
 /* ----- Media Queries ----- */
-@media screen and (max-width: 320px) {
-   
-}
-
-@media screen and (max-width: 480px) {
-    
-}
 
 @media screen and (max-width: 768px) {
     nav {
@@ -347,7 +343,7 @@ footer {
     #btn-holiday-partner {
         margin-top: 1em;
     }
-    /* .holiday-activity {
+    .holiday {
         margin: 0 auto;
         width: 65%;
         max-height: 100%;
@@ -358,7 +354,7 @@ footer {
         align-content: stretch;
         align-items: stretch;
     }
-    .holiday-activity figure {
+    .holiday figure {
         flex-grow: 1;
         flex-shrink: 0;
         margin: 0 1em;
@@ -367,7 +363,7 @@ footer {
     #holiday figure img {
         border-radius: 5px;
         height: 92%;
-    } */
+    }
     .footer-nav {
         width: 90%;
         padding: 1em;
@@ -375,6 +371,14 @@ footer {
     .footer-column {
         margin-right: 1.5em;
     }
+}
+
+@media screen and (max-width: 320px) {
+   
+}
+
+@media screen and (max-width: 480px) {
+    
 }
 
 @media screen and (max-width: 1024px) {
