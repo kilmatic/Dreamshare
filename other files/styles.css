@@ -282,6 +282,12 @@ footer {
 /* ----- Media Queries ----- */
 
 @media screen and (max-width: 768px) {
+    body {
+        background: none;
+    }
+    header {
+        max-width: fit-content;
+    }
     nav {
         background: rgba(61, 56, 56, .55);  
         padding: 0;
