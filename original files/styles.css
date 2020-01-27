@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    background-image: url(dreamshare_assets/assets/headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+/*****HEADER*****/
+header {
+    margin: 0 auto;
+    padding: 5em ;
+    padding-top: 1.5em;
+    width: 80%;
+    height: 575px;
+    position: absolute;
+    left: 5.5%;
+}
+nav {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: .8em;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.logo {
+    fill: #ffffff;
+    position: relative;
+    top: 15px;
+}
+#headernav h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+#headernav ul {
+    font-family: Montserrat, Roboto;
+    width: 65%;
+    margin: 1em;
+    margin-left: 5em;
+    list-style-type: none;
+    float: right;
+}
+#headernav ul li  {
+    float: left;    
+}
+#headernav ul li a {
+    color: #fff;
+    text-align: center;
+    padding-right: 2em;
+    text-decoration: none;
+}
+#headernav ul li button {
+    background-color: transparent;
+    border: #fff Solid 2px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: x-large;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
+#headertext { 
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 0;
+    height: 50%;
+}
+#headertext h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: #fff;
+}
+#headertext p {
+    font-size: 1.3m;
+    color: #fff;
+    margin-bottom: 2em;
+}
+#holiday-partners {
+    text-decoration: none;
+    font-family: Roboto, Montserrat;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #FF4E50;
+    padding: 1em;
+    font-size: .9em;
+    color: #fff;
+    overflow: hidden;
+}
+/*****HEADER - END*****/
+
+/*******Content********/
+.content {
+    background-color: #fff;
+    position: absolute;
+    top: 675px;
+    left: 0;
+    width: 100%;
+    height: 1600px;
+}
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+#partner{
+    margin: 1.5em; 
+}
+.headings {
+    font-size: 1.5em;
+    text-align: center;
+    color: #444444;
+    margin-top: 3.5em;
+}
+#partner ul {
+    margin: auto;
+    height: 270px;
+}
+#partner ul li {
+    display: block;
+    margin: .8em;
+    margin-left: .5em;
+    float: left;
+    width: 22%;
+    max-height: 90%;
+    text-align: center;
+}
+.photo {
+    border-radius: 50%;
+}
+.svg-contatainer {
+    width: 35px;
+    height: 35px;
+    border: #fff solid 4px;
+    border-radius: 50%;
+    position: relative;
+    top: -65px;
+    left: 100px;
+}
+.svg-icon {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 16px;
+    fill: #fff;
+}
+#music {
+    background-color: #FF4E50;
+}
+#brush {
+    background-color: #18D4CA;
+}
+#camera {
+    background-color: #FFA710;
+}
+#airplane {
+    background-color: #667DF3;
+    transform: rotate(-25deg);
+}
+#partner ul li h4 {
+    position: relative;
+    top: -65px;
+    color: #444444;
+}
+#partner ul li p {
+    font-size: .9em;
+    color: #666666;
+    position: relative;
+    top: -75px;
+}
+#btn-partner {
+    font-family: Roboto, Montserrat;
+    border: #FF4E50 solid 2px;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: .5em 1em .5em 1em;
+    font-size: 1em;
+    font-weight: 900;
+    color: #FF4E50;
+    position: relative;
+    left: 42%;
+    cursor: pointer;
+}
+#holiday {
+    margin: 1.5em;
+    max-height: 100%;
+    display: block;
+}
+#holiday figure {
+    padding: 10px;
+    margin: 0;
+}
+#holiday figure img {
+    border-radius: 5px;
+}
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -75px;
+    padding-bottom: 5px;
+}
+.text-over-img {
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    top: -160px;
+    color: #ffffff;
+}
+#dark-grey {
+    color: #444444;
+}
+/*****Content - End *****/
+
+/*********Footer*********/
+footer {
+    border-top: #FF4E50 solid 2px;
+    width: 100%;
+    height: 210px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: -228%;
+    left: 0;
+}
+table {
+    margin: 1em auto;
+}
+th {
+    color: #444444;
+    text-align: left;
+}
+td, th {
+    padding-right: 4.8em; 
+    margin-left: 1em;
+}
+td, td a {
+    text-decoration: none;
+    color: #666666;
+}
+.pink {
+    color: #FF4E50;
+}
+/*****Footer - End*****/
